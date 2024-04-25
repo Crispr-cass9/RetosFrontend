@@ -1,0 +1,222 @@
+:root{
+    --Light-red: hsl(0, 100%, 67%);
+    --Orangey-yellow: hsl(39, 100%, 56%);
+    --Green-teal: hsl(166, 100%, 37%);
+    --Cobalt-blue: hsla(234, 85%, 45%, 0.796);
+    --Light-slate-blue: hsla(252, 100%, 67%, 0.8);
+    --Light-royal-blue: hsl(241, 81%, 54%);
+    --Violet-blue: hsla(256, 72%, 46%, 1);
+    --Persian-blue: hsla(241, 72%, 46%, 0);
+    --White: hsl(0, 0%, 100%);
+    --Pale-blue: hsl(221, 100%, 96%);
+    --Light-lavender: hsl(241, 100%, 89%);
+    --Dark-gray-blue: hsl(224, 30%, 27%);
+}
+
+*{
+    border: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: hanken;
+}
+
+body{
+    height: 100vh;
+    width: 100vw;
+    font-size: 11px;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 16px;
+}
+
+#results-container{
+    width: 40vw;
+    display: flex;
+    height: 60vh;
+    justify-content: space-between;
+    box-shadow: 0 4px 15px 7px rgba(0, 0, 0, 0.047);
+    border-radius: 30px;
+}
+
+#user-result{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    border-radius: 30px;
+    width: 50%;
+    background: linear-gradient(to bottom,var(--Light-slate-blue), var(--Light-royal-blue));
+    padding: 3vh 0;
+}
+
+
+#user-result h1{
+    color: var(--Light-lavender);
+}
+
+#circle{
+    width: 10vw;
+    height: 10vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-flow: column nowrap;
+    border-radius: 50%;
+    background: linear-gradient(to bottom, var(--Violet-blue), var(--Persian-blue));
+    color: white;
+    font-size: 50px;
+
+
+}
+
+#of-100-text{
+    font-size: 20px;
+    color: var(--Light-lavender);
+}
+
+#user-result h3{
+    color: white;
+    font-size: 26px;
+}
+
+#user-result p{
+    color: var(--Light-lavender);
+    font-size: 15px;
+    text-align: center;
+    width: 70%;
+}
+
+#user-summary{
+    width: 50%;
+    border-radius: 30px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    padding: 2vh 2vw;
+}
+
+#user-summary h2{
+    color: var(--Dark-gray-blue);
+    align-self: flex-start;
+}
+
+.article-summary{
+    position: relative;
+    display: flex;
+    justify-content: center;
+    flex-flow: row nowrap;
+    justify-content: flex-start;
+    align-items: center;
+    width: 100%;
+    height: 50px;
+    border-radius: 10px;
+    padding: 0 1vw;
+    gap: 10px;
+}
+
+#reaction-title{
+    color: var(--Light-red);
+}
+
+#memory-title{
+    color: var(--Orangey-yellow);
+}
+
+#verbal-title{
+    color: var(--Green-teal);
+}
+
+#visual-title{
+    color: var(--Cobalt-blue);
+}
+
+.article-summary:nth-of-type(1){
+    background-color: hsla(0, 100%, 67%, 0.15);
+}
+
+.article-summary:nth-of-type(2){
+    background-color: hsl(39, 100%, 56%, 0.15);;
+}
+
+.article-summary:nth-of-type(3){
+    background-color: hsla(166, 100%, 37%, 0.13);
+}
+
+.article-summary:nth-of-type(4){
+    background-color: hsla(234, 85%, 45%, 0.15);
+}
+
+.score{
+    position: absolute;
+    right: 1vw;
+}
+
+.custom-text{
+    color: hsl(224, 30%, 27%, 0.6);
+}
+
+button{
+    width: 70%;
+    height: 5vh;
+    border-radius: 12px;
+    background-color: var(--Dark-gray-blue);
+    color: white;
+}
+
+button:hover{
+    background: linear-gradient(to bottom,var(--Light-slate-blue), var(--Light-royal-blue));
+}
+
+
+.attribution{
+    display: none;
+}
+
+@font-face {
+    font-family: Hanken;
+    src: url("./assets/fonts/HankenGrotesk-VariableFont_wght.ttf");
+}
+
+@media screen and (width<=440px) {
+    
+    #results-container{    width: 40vw;
+        display: flex;
+        height: 100vh;
+        width: 100vw;
+        justify-content: space-between;
+        flex-direction: column;
+    }
+
+
+    #user-result{
+        border-radius: 0px;
+        border-bottom-left-radius: 30px;
+        border-bottom-right-radius: 30px;
+        width: 100%;
+        height: 43%;
+        padding: 3vh 0;
+    }
+
+    #circle{
+        width: 20vh;
+        height: 20vh;
+    }
+
+    #user-summary{
+        width: 100%;
+        height: 67%;
+        padding: 2vh 7vw;
+    }
+
+    .article-summary{
+        padding-left: 4vw;
+    }
+
+    .score{
+        right: 5vw;
+    }
+
+}
