@@ -8,36 +8,110 @@
   
   <title>Frontend Mentor | Expenses chart component</title>
 
-  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
-  <style>
-    .attribution { font-size: 11px; text-align: center; }
-    .attribution a { color: hsl(228, 45%, 44%); }
-  </style>
+  <!-- Google fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&display=swap" rel="stylesheet">
+
+  <!-- My styles -->
+
+  <link rel="stylesheet" href="./style.css">
+
 </head>
 <body>
 
-  My balance
-  $921.48
+  <div id="global-container">
+    <main id="user-balance">
+      <h1>My balance <br> <span class="custom-text-large">$921.48</span></h1>
+      <svg width="72" height="48" viewBox="0 0 72 48" xmlns="http://www.w3.org/2000/svg"><g fill="none" fill-rule="evenodd"><circle fill="#382314" cx="48" cy="24" r="24"/><circle stroke="#FFF" stroke-width="2" cx="24" cy="24" r="23"/></g></svg>
+    </main>
+    
+    <section id="last-spending-container">
+      <h2>Spending - Last 7 days</h2>
+      <article id="graphic">
 
-  Spending - Last 7 days
 
-  mon
-  tue
-  wed
-  thu
-  fri
-  sat
-  sun
+        <div class="graphic-day">
+          <div class="toast">
+            <h3 class="value" id="mon-value"></h3>
+          </div>
+          <div class="bar"></div>
+          <h3 class="day">mon</h3>
+        </div>
 
-  Total this month
-  $478.33
 
-  +2.4%
-  from last month
+        <div class="graphic-day">
+          <div class="toast">
+            <h3 class="value" id="tue-value"></h3>
+          </div>
+          <div class="bar"></div>
+          <h3 class="day">tue</h3>
+        </div>
+
+
+        <div class="graphic-day">
+          <div class="toast">
+            <h3 class="value" id="wed-value"></h3>
+          </div>
+          <div class="bar"></div>
+          <h3 class="day">wed</h3>
+        </div>
+        
+        
+        <div class="graphic-day">
+          <div class="toast">
+            <h3 class="value" id="thu-value"></h3>
+          </div>
+          <div class="bar"></div>
+          <h3 class="day">thu</h3>
+        </div>
+
+
+        <div class="graphic-day">
+          <div class="toast">
+            <h3 class="value" id="fri-value"></h3>
+          </div>
+          <div class="bar"></div>
+          <h3 class="day">fri</h3>
+        </div>
+        
+        
+        <div class="graphic-day">
+          <div class="toast">
+            <h3 class="value" id="sat-value"></h3>
+          </div>
+          <div class="bar"></div>
+          <h3 class="day">sat</h3>
+        </div>
+
+
+        <div class="graphic-day">
+          <div class="toast">
+            <h3 class="value" id="sun-value"></h3>
+          </div>
+          <div class="bar"></div>
+          <h3 class="day">sun</h3>
+        </div>
+
+
+      </article>
+
+      <hr>
+
+      <article id="total-info">
+        <h2>Total this month<br><span id="total-spending-month">$478.33</span></h2>
+        <h3 id="comparison">+2.4%<br><span id="custom-text">from last month</span></h3>
+      </article>
+    </section>
+  
+  
+  </div>
   
   <div class="attribution">
     Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
     Coded by <a href="#">Your Name Here</a>.
   </div>
+  <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+  <script src="./script.js"></script>
 </body>
 </html>
