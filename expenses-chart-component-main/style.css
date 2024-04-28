@@ -32,7 +32,6 @@ body{
 #user-balance{
     display: flex;
     flex-flow: row nowrap;
-    border: solid red 1px;
     width: 90vw;
     height: 15vh;
     border-radius: 10px;
@@ -112,8 +111,8 @@ hr{
     border: none;
     border-radius: 2px;
     background-color: var(--Cream);
-    margin-top: 4vh;
-    margin-bottom: 4vh;
+    margin-top: 2vh;
+    margin-bottom: 2vh;
 }
 
 #total-info{
@@ -160,4 +159,25 @@ hr{
 
 .attribution{
     display: none;
+}
+
+@media screen and (width>=440px) {
+    #user-balance{
+        width: 40%;
+    }
+
+    #last-spending-container{
+        width: 40%;
+        border-radius: 8px;
+        padding: 2vw;
+        background-color: white;
+    }
+    #graphic{
+        margin-top: 7%;
+        height: 55%;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+        align-items: end;
+    }
 }
