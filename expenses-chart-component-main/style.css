@@ -74,7 +74,7 @@ body{
 #graphic{
     /* border: solid 2px red; */
     margin-top: 25%;
-    height: 40%;
+    height: 45%;
     display: flex;
     flex-direction: row;
     justify-content: space-around;
@@ -101,9 +101,11 @@ body{
 .bar{
     /* border: solid orange; */
     width: 100%;
-    height: 50%;
+    height: 0%;
     border-radius: 5px;
     background-color: var(--Soft-red);
+    transition-property: height, filter;
+    transition-duration: .7s, .3s;
 }
 
 hr{
@@ -161,6 +163,22 @@ hr{
     display: none;
 }
 
+.toast{
+    width: 120%;
+    height: 3vh;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--Dark-brown);
+    color: var(--Cream);
+    border-radius: 7px;
+    font-size: 10px;
+    font-weight: bold;
+    margin-bottom: 10px;
+    display: none;
+}
+
 @media screen and (width>=440px) {
     #user-balance{
         width: 40%;
@@ -179,5 +197,15 @@ hr{
         flex-direction: row;
         justify-content: space-around;
         align-items: end;
+    }
+
+    .bar{
+        width: 87%;
+    }
+
+    .toast{
+        height: 30px;
+        width: 100%;
+        font-size: 14px;
     }
 }
