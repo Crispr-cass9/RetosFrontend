@@ -1,0 +1,76 @@
+:root{
+    --White: hsl(0, 0%, 100%);
+    --Light-grayish-violet: hsl(270, 3%, 87%);
+    --Dark-grayish-violet: hsl(279, 6%, 55%);
+    --Very-dark-violet: hsl(278, 68%, 11%);
+    --Red: hsl(0, 100%, 66%);
+}
+
+*{
+    border: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: "Space Grotesk", sans-serif;
+}
+
+
+
+#global-container{
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    flex-flow: row nowrap;
+    justify-content: space-between;
+}
+
+#img-gradient{
+    height: 100vh;
+}
+
+#form-container{
+    border: solid blue 1px;
+    height: 50vh;
+    width: 30vw;
+    color: var(--Very-dark-violet);
+    display: flex;
+    flex-flow: column nowrap;
+    margin-right: 15vw;
+}
+
+.labels{
+    font-size: 18px;
+    font-weight: 800;
+}
+
+input{
+    height: 5vh;
+    font-size: 18px;
+    font-weight: 800;
+    border: solid 2px rgb(106, 61, 106);
+    border-radius: 5px;
+    margin: 2vh 0;
+}
+
+
+#front-card{
+    position: absolute;
+    border: solid green 1px;
+    top: 0;
+}
+
+.attribution{
+    display:  none;
+}
+
+#name-error{
+    display: none;
+}
+
+#card-num-error{
+    display: none;
+}
+
+#expiration-error{
+    display: none;
+}

@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  
+  <title>Frontend Mentor | Interactive rating component</title>
+  <!-- Google fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Overpass:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+
+  <!-- Hoja de estilos -->
+   <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+
+  <div id="contenedor-votacion">
+    <div class="contenedor-estrella">
+      <img src="./images/icon-star.svg" alt="">
+    </div>
+    <h2>How did we do?</h2>
+    <h4>Please let us know how we did with your support request. All feedback is appreciated 
+      to help us improve our offering!</h4>
+    
+    <div id="contenedor-botones-calificacion">
+      <div class="btn-calificacion">1</div>
+      <div class="btn-calificacion">2</div>
+      <div class="btn-calificacion">3</div>
+      <div class="btn-calificacion">4</div>
+      <div class="btn-calificacion">5</div>
+    </div>
+
+    <button type="submit" id="btn-enviar">Submit</button>
+    
+
+  </div>
+
+  <div id="contenedor-agradecimiento">
+    <img src="./images/illustration-thank-you.svg" alt="">
+    <h3 id="texto-calificacion">You selected 4 out of 5</h3>
+    <h2>Thank you!</h2>
+    <h4>We appreciate you taking the time to give a rating. If you ever need more support, 
+      don’t hesitate to get in touch!</h4>
+  </div>
+  
+  <div class="attribution">
+    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
+    Coded by <a href="#">Your Name Here</a>.
+  </div>
+
+  <!-- <script src="./script.js"></script> -->
+   <script src="../script_clase.js"></script>
+</body>
+</html>
